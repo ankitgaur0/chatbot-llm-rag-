@@ -40,13 +40,12 @@ This project implements a Question-Answering (QA) chatbot powered by a Large Lan
 .
 ├── src
 │   ├── models
-│   │   ├── llm_model.py            # Defines the LLM interface
-│   │   ├── retriever.py            # Handles document retrieval using FAISS
-│   │   └── rag_pipeline.py         # Combines LLM with retrieval for responses
-│   ├── data
-│   │   ├── preprocess.py           # Preprocessing scripts for raw data
-│   │   └── load_data.py            # Data ingestion functions
-│   ├── api
+│   │   ├── rag_model.py
+│   │       ├── llm_model            # Defines the LLM interface
+│   │       ├── retriever            # Handles document retrieval using FAISS
+│   │       └── rag_pipeline        # Combines LLM with retrieval for responses
+│   ├── preprocess.py           # Preprocessing scripts for raw data
+├── api
 │   │   └── app.py                  # FastAPI application for serving the chatbot
 │   └── utils
 │       ├── config.py               # Centralized configuration
